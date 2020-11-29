@@ -1,3 +1,5 @@
+import random
+
 print(type("string") == str)
 
 input = ["0", "5", "6"]
@@ -18,3 +20,7 @@ print(input)
  '2,0': {'prev': '1,0', 'cost': 18},
  '2,1': {'prev': '1,1', 'cost': 12},
  '2,2': {'prev': '2,1', 'cost': 14}}
+
+
+move_y = random.choice([1, 2, 3, 4])
+print(f"Random choice: {move_y}")
