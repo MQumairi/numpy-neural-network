@@ -1,4 +1,5 @@
 import random
+from statistics import mean
 
 print(type("string") == str)
 
@@ -24,3 +25,7 @@ print(input)
 
 move_y = random.choice([1, 2, 3, 4])
 print(f"Random choice: {move_y}")
+
+print(int(1.5))
+
+print(sum([1, 2, 3]))
