@@ -31,6 +31,6 @@ import numpy as np
 
 # print(sum([1, 2, 3]))
 
-a_1 = np.array([1, 2, 3])
-a_2 = np.array([1, 2, 3])
-print(a_1 * a_2)
+# a_1 = np.array([1, 2, 3])
+# a_2 = np.array([1, 2, 3])
+# print(a_1 * a_2)
