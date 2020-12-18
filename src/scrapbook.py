@@ -34,3 +34,5 @@ import numpy as np
 # a_1 = np.array([1, 2, 3])
 # a_2 = np.array([1, 2, 3])
 # print(a_1 * a_2)
+
+print(abs(-1.2))
