@@ -21,7 +21,9 @@ def encode_probabilities(y):
     return encoded_y
 
 
-def preprocess(X, y, m, n):
+def preprocess(X, y, set_features_as_rows=True):
+    m = len(X)
+    n = len(X[0]) ** 2
     # preprocess X... flatten
     X = X.numpy().reshape(m, n)
     # preproces y... one_hot_encode it
@@ -30,7 +32,22 @@ def preprocess(X, y, m, n):
         encoding = one_hot_encode(y[i])
         y_encoded.append(encoding)
     y = y_encoded
+    # Convert to numpy arrays
+    X = np.array(X)
+    y = np.array(y)
+    # Transpose if you want features as rows and samples as columns
+    if set_features_as_rows:
+        X = X.transpose()
+        y = y.transpose()
     return X, y
+
+
+def shorten(X, y, start, end):
+    features = X[:, start:end]
+    target = y[:, start:end]
+    # np.array([X[, start:length]])
+    # target = np.array([y[, start:length]])
+    return features, target
 
 
 def decode(encoded_y):

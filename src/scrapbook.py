@@ -41,7 +41,13 @@ cols = 10
 grid = np.zeros((rows, cols))
 print(grid)
 print("\n")
+print(len(grid))
 
-for row in grid:
-    print("Starting a row....")
-    print(row)
+bias = np.ones((rows, 1))
+
+total = grid + bias
+print(total)
+
+# for row in grid:
+#     print("Starting a row....")
+#     print(row)
