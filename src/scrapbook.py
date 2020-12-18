@@ -35,4 +35,13 @@ import numpy as np
 # a_2 = np.array([1, 2, 3])
 # print(a_1 * a_2)
 
-print(max(10, 13))
+# print(max(10, 13))
+rows = 5
+cols = 10
+grid = np.zeros((rows, cols))
+print(grid)
+print("\n")
+
+for row in grid:
+    print("Starting a row....")
+    print(row)
